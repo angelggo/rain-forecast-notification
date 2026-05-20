@@ -4,7 +4,7 @@ import os
 
 #API parameters
 weather_api_endpoint = "http://api.weatherapi.com/v1/forecast.json"
-API_KEY  = os.environ("W_API_KEY")
+API_KEY  = os.environ["W_API_KEY"]
 ZIPCODE = "Laredo"
 DAYS = 1
 
@@ -12,7 +12,7 @@ DAYS = 1
 weather_condition_code_for_rain = 1153
 will_rain = False
 my_email = "angelggo2004@gmail.com"
-password = os.environ("GMAIL_PASSWORD")
+password = os.environ["GMAIL_PASSWORD"]
 
 
 parameters = {
