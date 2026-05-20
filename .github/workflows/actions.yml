@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # At 00:00 on Monday
+    - cron: '*/5 * * * *' 
 
 jobs:
   build:
@@ -24,7 +24,8 @@ jobs:
           
       - name: execute py script # run main.py
         env:
-          SOME_SECRET: ${{ secrets.SOME_SECRET }}
+          W_API_KEY: ${{ secrets.W_API_KEY }}
+          GMAIL_PASSWORD: ${{ secrets.GMAIL_PASSWORD }}
         run: python main.py
           
       - name: commit files

@@ -12,7 +12,7 @@ DAYS = 1
 weather_condition_code_for_rain = 1153
 will_rain = False
 my_email = "angelggo2004@gmail.com"
-password = "qexxcdkzbyouxpvy"
+password = os.environ.get("GMAIL_PASSWORD")
 
 
 parameters = {
