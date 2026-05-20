@@ -4,7 +4,7 @@ import os
 
 #API parameters
 weather_api_endpoint = "http://api.weatherapi.com/v1/forecast.json"
-API_KEY  = os.environ.get("W_API_KEY")
+API_KEY  = os.environ("W_API_KEY")
 ZIPCODE = "Laredo"
 DAYS = 1
 
